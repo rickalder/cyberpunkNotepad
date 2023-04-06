@@ -36,7 +36,7 @@ const Note: React.FC<NoteProps> = ({ note, onLongPress }) => {
     >
       <View style={styles.btnNote}>
         <Text>{note.title}</Text>
-        <Text numberOfLines={4} ellipsizeMode="tail">{note.content}</Text>
+        <Text numberOfLines={3} ellipsizeMode="tail">{note.content}</Text>
       </View>
     </TouchableOpacity>
   );
