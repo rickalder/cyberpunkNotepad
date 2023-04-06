@@ -39,7 +39,7 @@ const App: React.FC = () => {
     <View style={{ flex: 1 }}>
       <NoteList notes={notes} onLongPress={handleDeleteNote} />
       {showNoteForm ? (
-        <NoteForm onSave={handleSaveNote} />
+       <NoteForm onSave={handleSaveNote} onClose={() => setShowNoteForm(false)} />
       ) : (
         <TouchableOpacity style={styles.addBtn} onPress={() => setShowNoteForm(true)}>
           <Text style={{ color: '#FFFFFF' }}>Add Note</Text>
